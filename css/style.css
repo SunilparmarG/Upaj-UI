@@ -1,0 +1,378 @@
+/***********Common*********/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;900&display=swap');
+
+body{
+  font-size: 16px;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.wrapper button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.wrapper .form-control {background: #EDFEEC;}
+.wrapper .form-control:focus {
+  background-color: #fff;box-shadow: none;
+}
+.box-shadow {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-16{
+  font-size: 1rem;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 1.5rem;
+}
+.fs-30{
+  font-size: 1.75rem;
+}
+.fs-32 {
+  font-size: 2rem;
+}
+.fs-48 {
+  font-size: 2.625rem;
+}
+
+.primary-bg {
+  background-color: #07352E;
+}
+.secondary-bg {
+  background-color: #80CB7B;
+}
+.primary-text {
+  color: #07352E;
+}
+.secondary-text {
+  color: #549650;
+}
+.tertiary-text {
+  color: #828282;
+}
+.gray-text {
+  color: #4f4f4f;
+}
+.darkgray-text {
+  color: #333333;
+}
+.wh-82 {
+  width: 82px;height: 82px;
+  min-width: 82px;min-height: 82px;
+}
+.wh-60 {
+  width: 60px;height: 60px;
+  min-width: 60px;min-height: 60px;
+}
+.fw-500 {font-weight: 500;}
+.fw-600 {font-weight: 600;}
+.fw-700 {font-weight: 700;}
+.fw-900 {font-weight: 900;}
+
+.borderrad10 {border-radius: 10px;}
+
+/***********Common*********/
+/***********Header*********/
+.header ul li a {
+  color: #07352E;font-weight: 700;
+  margin-left:36px;font-size: 24px;
+  padding: 30px 0 30px 0; 
+}
+.header ul li:first-child a {margin-left: 0;}
+.header ul li a:focus, .header ul li a:hover, .header ul li a:active {
+  color: #80CB7B;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url('../images/hamburger.svg');
+}
+.navbar-toggler .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url('../images/close.svg');
+}
+/***********Main*********/
+.main {margin-top: 100px;}
+h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
+.subheading {font-size: 24px;font-weight: 500;}
+.iframeTextdata {background: #FFFFFF;border-radius: 10px;}
+/*.iframeTextdata .iframedata {overflow: hidden;}*/
+.iframeTextdata .iframedata iframe {border-radius: 10px;}
+/***********Empower and Image top*********/
+.headertopBanner .roundicontextdata {font-size: 24px;margin-bottom: 30px;}
+.headertopBanner .roundicontextdata .roundicon .roundiconamount {
+  background-color: #00383D;font-weight: 900;
+}
+.headertopcard {margin: 65px 0;}
+.headertopBanner .roundicontextdata .textdata {font-weight: 500;line-height: 1;}
+
+.headertopBannerright.bannertopimage:before, .headertopBannerright.bannertopimage:after {
+  position: absolute;content: '';background: #549650;
+}
+.headertopBannerright.bannertopimage:before {
+  width: 60px;height: 60px;
+  left: -25px;top: -25px;
+}
+.headertopBannerright.bannertopimage:after {
+  width: 70px;height: 110px;
+  right: 0px;bottom: -35px;
+}
+
+/********Map graph*******/
+.mapgraph .imgamounttext .amounttext .amount {font-size: 40px;}
+.mapgraph .imgamounttext .amounttext .text {font-size: 20px;}
+.mapgraph .imgamounttext .imgleft img {min-width: 20px;}
+.mapgraph .imgamounttext {
+  background: #EDFFEC;
+  border: 1px solid #D1FDCF;
+}
+/********Farmers*******/
+.farmers {
+  min-height: 100%;
+  background: url(../images/farmerbg.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(128, 203, 123, 0.9);
+}
+.farmercards {
+  position: relative;
+  width: 100%;min-height: 300px;
+  padding: 40px 50px;
+  text-align: left;
+}
+.farmercards img {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+.farmercards .description {
+  padding: 20px 0;
+}
+.farmercards .farmerimgs {
+  position: absolute;
+  left: 0;right: 0;bottom:-55px;
+  margin: 0 auto;text-align: center;
+}
+
+/********Investor*******/
+.investors .topHeading {color: #07352E}
+.investors .owl-carousel .item {min-height: 200px; min-width: 200px;}
+.investors .owl-carousel .item .iteminner img {max-width: 150px;}
+
+/********Reachout*******/
+.reachout .maillocation p, .reachout .maillocation h5 {color: #333333;}
+.mapouter{position:relative;text-align:right;height:250px;width: 100%;max-width: 450px;}
+.gmap_canvas {overflow:hidden;background:none;height:250px;width: 100%;max-width: 450px;}
+.reachout form {
+  padding: 50px;
+}
+/********Investor*******/
+
+/***********Footer*********/
+.wrapper .fixed-bottom.footer {position: relative;}
+.footer ul li {margin-bottom: 30px;}
+.footer ul li.ms-36 {margin-left: 20px;} 
+.footer ul.termspolicy li a,.footer ul.termspolicy li a:hover,
+.footer ul.termspolicy li a:focus, .footer ul.termspolicy li a:active {color: #80CB7B;}
+.footer ul li a {
+  color: #80CB7B;
+  font-weight: 400;font-size: 18px;
+}
+.footer ul li a:hover, .footer ul li a:focus, .footer ul li a:active {
+  color: #fff;
+}
+.footer ul.termspolicy li a {color: #fff;}
+
+/*******Margin**********/
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.ms-36 {
+  margin-left: 36px;
+}
+/*******Padding**********/
+
+/*******About**********/
+
+.about-us .img-two {
+  left: 65px;
+  position: relative;
+  z-index: -1;
+  top: -90px;
+}
+
+.about-us .img-four {
+  position: absolute;
+  right: 67px;
+  bottom: -80px;
+}
+
+.about-us .model-section {
+  margin-top: 50px;
+}
+
+.details-box {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.details-box .img-box {
+  min-height: 230px;
+  overflow: hidden;
+  max-height: 230px;
+  margin-bottom: 30px;
+}
+
+.space-box {
+  padding: 20px;
+}
+
+.secondary-bg {
+  background-color: #80CB7B;
+}
+
+.white-bg {
+  background: #FFFFFF;
+  box-shadow: 0px -2px 9px rgba(7, 53, 46, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.round-imge {
+  border-radius: 50%;
+  min-height: 150px;
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.number-box {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 32px;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+.right-align {
+  position: relative;
+  right: -140px;
+  top: -30px;
+}
+
+.secondary-bg-space {
+  padding: 60px 0;
+}
+
+.subtract {
+  /* background: #07352E; */
+  min-width: 294px;
+  min-height: 294px;
+  width: 294px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.about-footer {
+  padding: 100px 20px;
+}
+
+/*******About**********/
+
+/*******Media**********/
+@media(max-width:1399px) {
+  .about-us .img-four {
+    right: 22px;
+  }
+}
+
+@media (max-width:1199px) {
+  .header ul li a {margin-left: 25px;}
+  .right-align {
+    position: relative;
+    right: 0;
+    top: 20px;
+  }
+}
+@media (max-width:992px) {
+  .header ul li a {
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+  .headertopBannerright.bannertopimage:before, .headertopBannerright.bannertopimage:after {
+    content: unset;
+  }
+  .number-box {
+    right: inherit;
+    top: -20px;
+    left: -21px;
+  }
+  .about-footer {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(10, 10, 10, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 50px 0;
+  }
+  .white-bg {
+    margin-top: 25px;
+  }
+  .round-imge {
+    min-height: 45px;
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
+  }
+  .subtract {
+    margin: 0 auto;
+  }
+  .secondary-bg-space {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width:574px) {
+  .footer .footerlinks {margin-left: 10px;}
+  .details-box .img-box {margin-bottom: 0;}
+  .headertopcard {margin: 15px 0;}
+  .investors .owl-carousel .item {
+    min-height: 150px;min-width: 150px;box-shadow: none;
+  }
+  .reachout form {
+    padding: 1.5rem;
+  }
+}

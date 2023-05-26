@@ -1,0 +1,195 @@
+/***********Common*********/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;900&display=swap');
+
+/* About US Start CSS */
+/*.fixed-bottom {
+  position: relative;
+}
+
+.darkgray-text {
+  color: #333333;
+}
+
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.fs-24 {
+  font-size: 1.5rem;
+}
+
+.fs-32 {
+  font-size: 2rem;
+}*/
+
+/*.fs-48 {
+  font-size: 2.625rem;
+}*/
+
+/*
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 500;
+}
+
+.fw-900 {
+  font-weight: 900;
+}*/
+
+/*.mt-100 {
+  margin-top: 100px;
+}*/
+
+.about-us .img-two {
+  left: 65px;
+  position: relative;
+  z-index: -1;
+  top: -90px;
+}
+
+.about-us .img-four {
+  position: absolute;
+  right: 67px;
+  bottom: -80px;
+}
+
+.about-us .model-section {
+  margin-top: 50px;
+}
+
+.details-box {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.img-box {
+  min-height: 230px;
+  overflow: hidden;
+  max-height: 230px;
+  margin-bottom: 30px;
+}
+
+.space-box {
+  padding: 20px;
+}
+
+.secondary-bg {
+  background-color: #80CB7B;
+}
+
+.white-bg {
+  background: #FFFFFF;
+  box-shadow: 0px -2px 9px rgba(7, 53, 46, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.round-imge {
+  border-radius: 50%;
+  min-height: 150px;
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.number-box {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 32px;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+.right-align {
+  position: relative;
+  right: -140px;
+  top: -30px;
+}
+
+.secondary-bg-space {
+  padding: 60px 0;
+}
+
+.subtract {
+  /* background: #07352E; */
+  min-width: 294px;
+  min-height: 294px;
+  width: 294px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.about-footer {
+  padding: 100px 20px;
+}
+
+/* Device CSS */
+@media(max-width:1399px) {
+  .about-us .img-four {
+    right: 22px;
+  }
+}
+
+@media(max-width:1200px) {
+  .right-align {
+    position: relative;
+    right: 0;
+    top: 20px;
+  }
+}
+
+@media(max-width:992px) {
+  .number-box {
+    right: inherit;
+    top: -20px;
+    left: -21px;
+  }
+
+  .about-footer {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(10, 10, 10, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 50px 0;
+  }
+
+  .white-bg {
+    margin-top: 25px;
+  }
+
+  .round-imge {
+    min-height: 45px;
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .subtract {
+    margin: 0 auto;
+  }
+
+  .secondary-bg-space {
+    padding: 60px 30px;
+  }
+}
+
+
+/* About US End CSS */
