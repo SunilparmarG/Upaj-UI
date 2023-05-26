@@ -44,6 +44,12 @@ body{
 .secondary-bg {
   background-color: #80CB7B;
 }
+.gray-bg {
+  background-color: #F2F2F2;
+}
+.lightgreen-bg{
+  background-color: #99D595;
+}
 .primary-text {
   color: #07352E;
 }
@@ -73,7 +79,9 @@ body{
 .fw-900 {font-weight: 900;}
 
 .borderrad10 {border-radius: 10px;}
-
+.text-justify{
+  text-align: justify;
+}
 /***********Common*********/
 /***********Header*********/
 .header ul li a {
@@ -82,7 +90,7 @@ body{
   padding: 30px 0 30px 0; 
 }
 .header ul li:first-child a {margin-left: 0;}
-.header ul li a:focus, .header ul li a:hover, .header ul li a:active {
+.header ul li a:focus, .header ul li a:hover, .header ul li a:active, .header ul li.active a  {
   color: #80CB7B;
 }
 .navbar-toggler .navbar-toggler-icon {
@@ -248,10 +256,6 @@ h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
   padding: 20px;
 }
 
-.secondary-bg {
-  background-color: #80CB7B;
-}
-
 .white-bg {
   background: #FFFFFF;
   box-shadow: 0px -2px 9px rgba(7, 53, 46, 0.1);
@@ -312,6 +316,45 @@ h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
 
 /*******About**********/
 
+/*******career**********/
+
+.career-img {
+  width: 350px;
+  min-width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.career-img:after {
+  content: "";
+  position: absolute;
+  background: url("./../images/shape.svg");
+  background-position: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a:hover{
+  transition: all ease-in-out 0.3s;
+  color: #80CB7B;
+}
+
+.team .card.details-box .media img{
+  width: 61px;
+  min-width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*******career**********/
+
 /*******Media**********/
 @media(max-width:1399px) {
   .about-us .img-four {
@@ -327,6 +370,7 @@ h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
     top: 20px;
   }
 }
+
 @media (max-width:992px) {
   .header ul li a {
     margin-left: 0;
