@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;900&display=swap');
 
 body{
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Hanken Grotesk', sans-serif;
 }
 .wrapper button:focus {
@@ -13,17 +13,21 @@ body{
 .wrapper .form-control:focus {
   background-color: #fff;box-shadow: none;
 }
+.wrapper label.form-label {
+  font-size: 1.25rem;font-weight: 600;
+  margin-bottom: 0;color: #333333;
+}
 .box-shadow {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
 }
 .fs-14{
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .fs-16{
   font-size: 1rem;
 }
 .fs-20 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .fs-24 {
   font-size: 1.5rem;
@@ -35,11 +39,19 @@ body{
   font-size: 2rem;
 }
 .fs-48 {
-  font-size: 2.625rem;
+  font-size: 3rem;
 }
-
+.cursor-pointer {
+  cursor:pointer;
+}
 .primary-bg {
   background-color: #07352E;
+}
+.black-bg {
+  background-color: #000000;
+}
+.lightorange-bg {
+  background-color: #FFF9E9;
 }
 .secondary-bg {
   background-color: #80CB7B;
@@ -65,6 +77,15 @@ body{
 .darkgray-text {
   color: #333333;
 }
+.red-text {
+  color: #FA2121;
+}
+.blue-text {
+  color: #2F80ED;
+}
+.black-text {
+  color: #000;
+}
 .wh-82 {
   width: 82px;height: 82px;
   min-width: 82px;min-height: 82px;
@@ -73,11 +94,18 @@ body{
   width: 60px;height: 60px;
   min-width: 60px;min-height: 60px;
 }
+.min-wh-20 {
+  min-width: 20px;min-height: 20px;
+}
 .fw-500 {font-weight: 500;}
 .fw-600 {font-weight: 600;}
 .fw-700 {font-weight: 700;}
 .fw-900 {font-weight: 900;}
 
+.primarybtn {
+  padding: 15px 50px 15px 50px;
+  font-size: 24px;font-weight: 600;
+}
 .borderrad10 {border-radius: 10px;}
 .text-justify{
   text-align: justify;
@@ -110,6 +138,12 @@ h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
 /*.iframeTextdata .iframedata {overflow: hidden;}*/
 .iframeTextdata .iframedata iframe {border-radius: 10px;}
 /***********Empower and Image top*********/
+/*.headertopBanner {
+  background-image: url(../images/bannertop.svg);
+  background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}*/
 .headertopBanner .roundicontextdata {font-size: 24px;margin-bottom: 30px;}
 .headertopBanner .roundicontextdata .roundicon .roundiconamount {
   background-color: #00383D;font-weight: 900;
@@ -215,11 +249,20 @@ h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
 .mt-100 {
   margin-top: 100px;
 }
+.mt-50 {
+  margin-top: 50px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
 .ms-36 {
   margin-left: 36px;
 }
 /*******Padding**********/
-
+.px-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 /*******About**********/
 
 .about-us .img-two {
@@ -314,7 +357,59 @@ h2.topHeading {font-size: 42px;font-weight: 900;margin: 50px 0;}
   padding: 100px 20px;
 }
 
-/*******About**********/
+/*******JOb**********/
+.applyjob .applyjobform .applyjobformlabel label {min-width: 110px; text-align: right;}
+.upload-btn-wrapper {
+  position: relative;overflow: hidden;
+}
+.applyjobform .upload-btn-wrapper input[type=file] {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.form-group.customcheckbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group.customcheckbox label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group.customcheckbox label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 7.5px;
+  display: inline-block;position: relative;
+  vertical-align: middle;border-radius: 4px;
+  cursor: pointer;margin-right: 5px;
+  background: #F3F3F3;border: 1px solid #828282;
+}
+
+.form-group.customcheckbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;left: 6px;
+  width: 5px;height: 9px;
+  border: solid #07352E;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+
+/*******JOb**********/
 
 /*******career**********/
 
@@ -409,14 +504,27 @@ a:hover{
   }
 }
 
-@media (max-width:574px) {
+@media (max-width:768px) {
+  .iframeTextdata .iframedata {
+    position: relative;padding-top: 56.7%;
+  }
+  .iframeTextdata .iframedata iframe {
+    position: absolute;
+    left: 0;top: 0;right: 0;
+    width: 100%;height: 100%;
+  }
+}
+@media (max-width:575px) {
   .footer .footerlinks {margin-left: 10px;}
   .details-box .img-box {margin-bottom: 0;}
   .headertopcard {margin: 15px 0;}
   .investors .owl-carousel .item {
     min-height: 150px;min-width: 150px;box-shadow: none;
   }
-  .reachout form {
-    padding: 1.5rem;
-  }
+  .applyjob .applyjobform .applyjobformlabel label {
+    text-align: left;
+}
+  
+  .reachout form {padding: 1.5rem;}
+
 }
