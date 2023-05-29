@@ -268,11 +268,23 @@ h2.topHeading {
   background: #549650;
 }
 
+.headertopBannerright.bannertopimage {
+  background-image: url(../images/bannertop.svg);
+    background-position: right top;
+    height: -webkit-fill-available;
+    max-width: 618px;width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;position: absolute;
+    margin: 0;
+    position: absolute;
+}
+.headertopBannerright.bannertopimage img {display: none;}
 .headertopBannerright.bannertopimage:before {
-  width: 60px;
-  height: 60px;
-  left: -25px;
-  top: -25px;
+      width: 60px;
+    height: 60px;
+    left: 125px;
+    top: -25px;
 }
 
 .headertopBannerright.bannertopimage:after {
@@ -419,6 +431,10 @@ h2.topHeading {
   color: #fff;
 }
 
+/*******Top / Bottom / Left / Right**********/
+.top-0 {top:0;}
+.top-20 {top:20px;}
+.right-0 {right:0;}
 /*******Margin**********/
 .my-30 {
   margin-top: 30px;
@@ -740,11 +756,26 @@ a:hover {
   .header ul li a {
     margin-left: 25px;
   }
+  .headertopBannerright.bannertopimage:before {
+    left:70px;
+  }
 
   .right-align {
     position: relative;
     right: 0;
     top: 20px;
+  }
+}
+@media (max-width:1023px) {
+  .headertopBannerleft {padding-right: 20px;width: 100%;}
+  .headertopBannerright.bannertopimage {
+    background-image: unset;position: unset;
+    margin: 0 auto;
+  }
+  .headertopBannerright.bannertopimage img {display: block;}
+  .headertopBannerright.bannertopimage:before,
+  .headertopBannerright.bannertopimage:after {
+    content: unset;
   }
 }
 
@@ -757,11 +788,10 @@ a:hover {
     margin-left: 0;
     padding-bottom: 0;
   }
-
-  .headertopBannerright.bannertopimage:before,
+/*  .headertopBannerright.bannertopimage:before,
   .headertopBannerright.bannertopimage:after {
     content: unset;
-  }
+  }*/
 
   .number-box {
     right: inherit;
@@ -813,7 +843,11 @@ a:hover {
     height: 100%;
   }
 }
-
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+  .iframeTextdata .iframedata  iframe {
+    width: 210px;    height: auto;
+  }
+}
 @media(max-width:767px) {
   .story .story-banner {
     background-position: center;
