@@ -145,6 +145,10 @@ body {
   min-width: 20px;
   min-height: 20px;
 }
+.wh-17 {
+  min-width: 17px;min-height: 17px;
+  width: px;height: 17px;
+}
 
 .fw-500 {
   font-weight: 500;
@@ -325,15 +329,22 @@ h2.topHeading {
   position: relative;
   width: 100%;
   min-height: 300px;
-  padding: 40px 50px;
+  padding: 30px 40px 80px 30px;
   text-align: left;
 }
 
+.farmercards .farmerimgs {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;width: 150px;
+    min-height: 150px;min-width: 150px;
+    background: green;
+    border-radius: 50%;
+  max-width: 100%;    overflow: hidden;
+}
 .farmercards img {
-  max-width: 100%;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+
   margin-bottom: 0;
   display: inline-block;
   z-index: 1;
@@ -630,8 +641,10 @@ h2.topHeading {
   transform: rotate(45deg);
 }
 
-
-
+/*******Partner**********/
+.growthstory .growthgraphdata .graph .graphinnerdata .circletextdata:nth-child(1) {
+  background-color: #1D9088;
+}
 /*******JOb**********/
 
 /*******career**********/
@@ -828,7 +841,15 @@ a:hover {
   }
 }
 
-@media (max-width:768px) {
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+  .iframeTextdata .iframedata  iframe {
+    width: 210px;    height: auto;
+  }
+}
+@media(max-width:767px) {
+  .story .story-banner {
+    background-position: center;
+  }
   .iframeTextdata .iframedata {
     position: relative;
     padding-top: 56.7%;
@@ -841,16 +862,6 @@ a:hover {
     right: 0;
     width: 100%;
     height: 100%;
-  }
-}
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
-  .iframeTextdata .iframedata  iframe {
-    width: 210px;    height: auto;
-  }
-}
-@media(max-width:767px) {
-  .story .story-banner {
-    background-position: center;
   }
 }
 
