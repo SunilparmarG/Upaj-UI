@@ -696,6 +696,30 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.story-details-banner img {
+  margin: 0 auto;
+  display: block;
+}
+
+.hindi-title {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.story-details-banner .story-banner-title {
+  position: relative;
+  padding: 2px 14px;
+
+}
+
+.story-details-banner .story-banner-title span {
+  display: block;
+}
+
+.ml-35 {
+  margin-left: 35px;
+}
+
 /* Story Page */
 
 
@@ -704,6 +728,11 @@ a:hover {
 @media(max-width:1399px) {
   .about-us .img-four {
     right: 22px;
+  }
+
+  .hindi-title {
+    display: inline-block;
+    margin-left: 0;
   }
 }
 
@@ -720,6 +749,10 @@ a:hover {
 }
 
 @media (max-width:992px) {
+  .story-details-banner .story-banner-title.fs-36 {
+    font-size: 20px;
+  }
+
   .header ul li a {
     margin-left: 0;
     padding-bottom: 0;
